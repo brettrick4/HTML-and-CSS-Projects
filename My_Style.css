@@ -1,0 +1,25 @@
+p {color: darkred; 
+	text-align: center;
+	font-size: 40px;
+	font-style: italic;
+	}
+	
+header {
+	text-align: center;
+	color: blue;
+	font-size: 50px;
+	text-shadow: 2px 2px 5px #8B008B;
+	
+	
+	
+}
+
+
+footer {
+	
+	font-family: Times New Roman;
+	font-size: 30px;
+	color: #8A2BE2;
+	text-align: center;
+	
+}
