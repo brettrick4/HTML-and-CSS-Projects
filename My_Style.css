@@ -8,18 +8,33 @@ header {
 	text-align: center;
 	color: blue;
 	font-size: 50px;
-	text-shadow: 2px 2px 5px #8B008B;
+	text-shadow: 3px 3px 5px #8B008B;
 	
 	
 	
 }
+h2 {
+	text-align:center;
+	font-size: 25px;
+	color: #000080
+}
 
-
-footer {
+h3 {
 	
 	font-family: Times New Roman;
 	font-size: 30px;
 	color: #8A2BE2;
+	text-align: center;
+	
+}
+
+footer {
+	text-align: center;
+	font-size: 20px;
+	color: green;
+}
+h4 {font-size:12;
+	color: #B8860B
 	text-align: center;
 	
 }
