@@ -282,7 +282,7 @@ section {
     font-family: 'Raleway', sans-serif;
 }
 
-.eservation input[type="text"]:hover {
+.reservation input[type="text"]:hover {
     box-shadow: 0 0 18px rgba(100,65,0,0.8);
 }
 .form-spacer {
