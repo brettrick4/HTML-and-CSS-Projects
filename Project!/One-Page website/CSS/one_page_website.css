@@ -1,0 +1,54 @@
+/*THIS PORTION OF CODE APPLIES TO THE HOME PAGE*/
+h1 {
+	color: darkgreen;
+	text-align: center;
+	font-size: 60px;
+	font-style: italic;
+	cursor: pointer;
+	}
+	
+	p	{
+		text-align:center;
+		font-size:40px;
+		color: green;
+		font-family: Arial, Helvetica, sans-serif;
+		cursor: pointer;
+	}
+	nav {
+		text-align: center;
+	}
+	body {
+		background-color: #ffff00;
+		font-weight: bold;
+	}
+	/*THIS PROTION OF CODE APPLIES TO THE CONTACT PAGE*/
+	#contact {
+		background-color: #003300;
+		text-align: center;
+		cursor: pointer;
+		
+	}
+	h2 {
+		text-align: center;
+		font-size: 60px;
+		font-style: italic;
+		color: burlywood;
+		background-color: #003300;
+	}
+	.container {
+		background-color: #003300;
+		display: inline-block;
+		font-size: 15px;
+	}
+	input {
+		width: 100%;
+		padding: 20px 50px;
+		margin: 1px 0;
+		display: inline-block;
+		border: 1px solid black;
+		border-radius: 4px;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
+	
+	
