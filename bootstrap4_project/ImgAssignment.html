@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Bootstrap CSS -->
+    <title>Image Work </title>
+      <link rel="stylesheet" type="text/css" href="Img_CSS.css">
+       
+        <style>
+         /* <!--OVERLAY--> */ 
+         
+          .container {
+              position: relative;
+              /* width: 50%;
+              margin-left: 50%;
+              margin-right: 50%;
+              padding: 50px;
+              margin-top: 1px; */
+              height:800px;
+            
+              }
+            .image {
+              display: block;
+              width: auto;
+              height: auto;
+            }
+            .overlay {
+              position: inherit;
+              /*top: 10px;
+              margin-bottom: 0;
+              margin-left: -106%;
+              overflow: hidden; */
+              height: 100%;
+              width: 100%;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: rgb(29, 145, 240);
+            }
+            .container:hover .overlay {
+              opacity: .9;
+              
+            }
+            .text {
+              color:rgb(177, 7, 7);
+              font-size: 40px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+            }
+              /* END OVERLAY */
+              /* <!--NAVBAR--> */
+            body {margin:0;}
+            .navbar {
+                overflow: hidden;
+                background-color: rgb(233, 140, 27);
+                text-align: center;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                width: 100%;
+            }
+            .navbar a {
+                float: left;
+                display: block;
+                color: rgb(240, 216, 109);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 25px;
+            }
+            .navbar a:hover {
+                background: rgb(248, 183, 109);
+                color: rgb(251, 251, 66);
+            }
+            
+             * { box-sizing: border-box;
+            }
+            /* <!--End Navbar Style--> */
+
+            /*<!--Columns--> */
+            .column {
+                  float: left;
+                  width: 50%;
+                  padding: 10px;
+                  height: 300px;
+                }
+                .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+             /*<!--End Columns--> */    
+        </style>
+    </head>
+          <body>
+            <div class="navbar">
+             <a href="#about">About</a> 
+             <a href="#FAQ's">FAQ's</a> 
+             <a href="#contact">Contact</a> 
+            </div>
+             <!--END NAVBAR-->
+
+                <div class="container">
+                  <video style="height:100%" class="" autoplay muted loop><source src="./Stylesheet/video/Video.mp4" type="video/mp4">
+                  </video>
+                     <div style="position: absolute;top:50%;text-align: right;" class="">Visit beautiful Portland, Oregon</div>
+                     <div class="overlay" style="position:absolute;top:0;height:100%;">
+                    <div class="text">Doube Vision!!!</div>
+                     </div>
+                </div>
+           
+                <h3>Find your favorite vice!</h3>
+                
+                <div class="row">
+                  <div class="column" style="background-color:rgb(223, 200, 74);">
+                    <h2>Try our delicious beer!</h2>
+                    <img src="./img/Beer.jpg" alt="mmm" class="border">
+                  </div>
+                  <div class="column" style="background-color:rgb(9, 160, 9);">
+                    <h2>Enjoy some of the world's finest cannabis!</h2>
+                    <img src="./img/cannabis.jpg" alt="" class="bordered">
+                  </div>
+                </div>
+               
+            </body>
+                    <footer>
+                      
+                      <h3>And now for something completely different</h3>
+                      <img src="./img/OldTown.jpg" alt="?" style="filter: hue-rotate(90deg); width:50%;
+                      border:5px solid rgb(2, 75, 194);border-radius: 25px;">
+                      
+                      
+                    </footer>
+                  
+
+                  <!-- Optional JavaScript -->
+                  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                  
+                </div>
+              </html>
