@@ -3,12 +3,20 @@
 	<head>
 	 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	  <link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css"> 
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	   <title>Wild Oregon!</title>
 	    </head>
 		 <header>
 		  <h1><u>WILD OREGON</u></h1>
 		   </header>
 			  <body>
+				<script>document.body.className += ' fade-out';</script> 
+				<script>
+					$(function() {
+						$('body').removeClass('fade-out');
+					});
+				</script>
+				
 				<p>Oregonians are lucky to live in a state with such an abundance of natual areas to view and appreciate wildlife. But be careful! Some of our wild animals can kill!
 				<br><iframe width="420" height="350" src="https://www.youtube.com/embed/jD8WbOdZj4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 				<br>And some wild animals are just too cute!</br>
@@ -74,6 +82,17 @@
 							</div>
 						</div>
 					
+				<div id="slideShow">
+					<div>
+						<img src="./One_Page_images/duckilng.jpg" alt="">
+					</div>
+					<div>
+						<img src="./One_Page_images/babyfox.jpg" alt="">
+					</div>
+					<div>
+						<img src="./One_Page_images/beaver.jpg" alt="">
+					</div>
+				</div>		
 			 
 			 <br><img class="pics" src="./One_Page_images/rodents.jpg" alt="um">
 			 <img class="pics" src="./One_Page_images/beaver.jpg" alt="err">
@@ -88,5 +107,7 @@
 	<a href="Contact_info_2.html">CONTACT </a> |
 	  </nav>
 	  <script src="./JS/one_page_website.js"></script> 
+	  <script>document.body.className += ' fade-out';</script>
+				
 	</body>
 </html>

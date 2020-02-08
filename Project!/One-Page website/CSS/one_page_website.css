@@ -2,6 +2,12 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	background-color: #f0f000;
+	opacity: 1;
+	transition: 1s opacity;
+}
+body.fade-out {
+	opacity: 0;
+	transition: none;
 }
 * {
 	box-sizing: border-box;
@@ -11,6 +17,7 @@ body {
 	display: table;
 	margin: auto;
 	float: left;
+	
 }
 .row:after {
 	content: "";
@@ -98,8 +105,7 @@ body {
 }
 img {
 	margin-bottom: -4px;
-	
-	height: 75%;
+	height: 50%;
 	width: 100%; 
 }
 .caption-container {
@@ -133,14 +139,14 @@ img.hover-shadow {
 h1 {
 	color: darkgreen;
 	text-align: center;
-	font-size: 60px;
+	font-size: 8vw;
 	font-style: italic;
 	cursor: pointer;
 	}
 	
 	p	{
 		text-align:center;
-		font-size:40px;
+		font-size:3vw;
 		color: green;
 		font-family: Arial, Helvetica, sans-serif;
 		cursor: pointer;
@@ -149,7 +155,22 @@ h1 {
 		text-align: center;
 		font-size: 30px;
 	}
-	
+	#slideShow {
+		margin: 80px auto;
+		position: relative;
+		width: 220px;
+		height: 200px;
+		padding: 5px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	}
+	#slideShow > div {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		right: 10px;
+		bottom: 10px;
+	}
+
 	/*THIS PROTION OF CODE APPLIES TO THE CONTACT PAGE*/
 	#contact {
 		background-color: #003300;

@@ -1,6 +1,24 @@
+/*front end pdx*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Body*/
 body {
   margin: 0%;
+  opacity: 1;
+  transition: 3s opacity;
+  letter-spacing: .2vw;
+  font-family: Avant Garde, Helvetica;
+  font-size: 1.5vw;
 }
+
+/*This section contributes to the fade effect when the page is loading*/
+body.fade-out {
+    opacity: .1;
+    transition: none;
+}
+
 /*NAVBAR*/
 .navbar {
     overflow:hidden;
@@ -9,26 +27,71 @@ body {
     top: 0;
     width: 100%;
     z-index: 1;
+    -webkit-animation: moveNav 3s;
+    animation: moveNav 3s;
 }
+
+/*Navbar text*/
 .navbar a {
     float: left;
     display: block;
     color: white;
-    padding: 14px 16px;
+    padding: .75vw 1vw;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     text-align: center;
+    position: relative;
+    -webkit-animation: movenavText 3.75s;
+    animation: movenavText 3.75s;
+    letter-spacing: .2vw;
 }
+
+/*Animation effect for moving the navbar in from the top of the screen on page load*/
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+/*Animation effect for moving the navbar in from the top of the screen on page load*/
+
+@keyframes moveNavText {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+/*This animation effect causes the overlay video text to move up from the bottom of the page on load */
+
+@keyframes movevideoText {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+/*Navbar hover effect*/
 .navbar a:hover {
     background-color: #f4f4f4;
     color: black;
     font-weight: bold;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
 }
+
+/*Navbar home button*/
 .navbar a.active {
     background-color: darkgray;
 }
 
+/*This causes the video to zoom out from a zoomed in position on page load*/
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1.5,1.5);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
 
 /* VIDEO */
 #Typing_Video {

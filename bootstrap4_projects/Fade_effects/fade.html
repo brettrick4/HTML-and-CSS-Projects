@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="fade.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   </head>
+   <header>Just a bunch of words</header>
+      <body>
+         <div class="main" id="section1">
+            <a href="#section2"><h1>Scroll to bottom of page</h1></a>
+         </div>
+         <script>document.body.className += ' fade-out';</script> 
+         <script>
+            $(function() {
+               $('body').removeClass('fade-out');
+            });
+         </script>
+      
+            <button class="open-button" onclick="openForm()">Open Form</button>
+            <div class="form-popup" id="myForm">
+               <form action="/action_page.php" class="form-container">
+                  <h1>Login</h1>
+
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+               
+               </form>
+            </div>
+
+            <div class="animation"></div>
+            <div id="zoom">
+            <h1>Pretty!</h1>
+            <div class="card-container"><img class="flowers" src="flowers.jpg" alt="phhh"></div>
+            </div>
+         <div class="main" id="section2">
+            <a href="#section1"><h1>Scroll to top of page</h1></a>
+         </div>
+         <a href=""
+      </body>
+      <script src="fade.js"></script>
+
+</html>

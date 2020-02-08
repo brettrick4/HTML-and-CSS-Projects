@@ -1,5 +1,6 @@
 table {
 	border: 1px solid silver;
+	
 }
 td:hover {
 	background-color: yellow;
@@ -8,8 +9,11 @@ td:hover {
 tr, th {
 	background-color: black;
 	color: cornsilk;
+	padding: 15px;
+	
 }
 tr, td {
-	background-color: green;
+	background-color: rgb(3, 110, 3);
 	color: white;
+	padding: 15px;
 }
